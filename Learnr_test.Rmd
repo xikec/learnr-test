@@ -1,0 +1,38 @@
+---
+title: "Feedback at scale"
+output: 
+  learnr::tutorial:
+runtime: shiny_prerendered
+---
+
+
+```{r setup, include=FALSE}
+# load packages
+library(learnr)     # rstudio/learnr@bdb2c52
+
+# hide non-exercise code chunks
+knitr::opts_chunk$set(echo = FALSE)
+```
+  
+## learnr + gradethis
+
+```{r header, out.width = "100%"}
+knitr::include_graphics("images/header.png")
+```
+
+### Narrative
+
+We'll use the **tidyverse** package for this analysis and the **dsbox** package for the data. Let's load these packages!
+
+```{r load-packages, echo = TRUE}
+library(tidyverse)
+library(dsbox)
+```
+
+### Ready-to-run code
+
+The dataset we'll be using is called **edibnb** and it contains information on Airbnb listings in Edinburgh. You can view the names of the variables using the `names()` function.
+
+```{r edibnb-names, exercise=TRUE}
+1+1
+```
